@@ -3,7 +3,8 @@ import "./styles.css";
 
 const SignButtom = (props) => {
   return (
-    <button 
+    <button
+    style={{backgroundColor: props.backgroundColor, color: props.color}}
     type={props.type}
     onClick={props.onClick} 
     onSubmit={props.onSubmit}

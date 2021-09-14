@@ -1,8 +1,13 @@
+import Header from "./TodoCreator/index";
+import Main from "./TodoList/index";
+
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <>
+        <Header />
+        <Main />
+        <footer>TodoFilter</footer>
+        </>
     );  
 };
 
