@@ -6,9 +6,10 @@ const transformarTarefa = (tarefaBD) => {
     return {
         id: tarefaBD._doc._id,
         nome: tarefaBD._doc.nome,
+        dataInicio: tarefaBD._doc.dataInicio,
         dataPrevistaConclusao: tarefaBD._doc.dataPrevistaConclusao,
         dataConclusao: tarefaBD._doc.dataConclusao,
-        idUsuario: tarefaBD._doc.idUsuario
+        idCriador: tarefaBD._doc.idCriador
     }
 }
 
@@ -57,7 +58,7 @@ class MongoDBTarefaRepository {
 
         if (status && status.trim()) {
             const statusInt = parseInt(status);
-            if (statusInt === StatusTarefa.EM_ABERTO) {
+            if (statusInt === StatusTarefa.EM_ABERTO ||statusInt === StatusTarefa.DESCONTINUADO) {
                 query.dataConclusao = null;
             } else if (statusInt === StatusTarefa.CONCLUIDO) {
                 // diz para o filtro pegar todas as tarefas com dataConclusão != null

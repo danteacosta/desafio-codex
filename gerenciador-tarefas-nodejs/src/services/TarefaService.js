@@ -24,6 +24,7 @@ class TarefaService {
             if (!dados.dataPrevistaConclusao || !dados.dataPrevistaConclusao.trim()) {
                 erros.push('Data prevista de conclusão é obrigatória');
             }
+            
         }
 
         const resposta = { erros: null, tarefa: null }
@@ -82,6 +83,9 @@ class TarefaService {
 
         if (dados.dataConclusao && dados.dataConclusao.trim()) {
             dadosAtualizar.dataConclusao = new Date(dados.dataConclusao);
+        }
+        if (dados.dataInicio && dados.dataInicio.trim()) {
+            dadosAtualizar.dataInicio = new Date(dados.dataInicio);
         }
 
         const tarefaEditada = await TarefaRepository.editar(id, dadosAtualizar);

@@ -36,6 +36,9 @@ class UsuarioService {
                 }
             }
         }
+        if(!dadosUsuario.cargo || !dadosUsuario.cargo.trim()){
+            listaErros.push('Cargo inválido');
+        }
 
         if (!dadosUsuario.senha || !dadosUsuario.senha.trim()) {
             listaErros.push('Senha inválida');

@@ -15,8 +15,25 @@ const UsuarioSchema = new Schema({
     senha: {
         type: String,
         required: [true, mensagemErroObrigatorio]
+    },
+    cargo: {
+        type: String,
+        required: [true, mensagemErroObrigatorio]
+    },
+    nascimento: {
+        type: Date,
+        required: false
+    },
+    telefone: {
+        type: String,
+        required: false
+    },
+    especialidade: {
+        type: String,
+        required: false
     }
 });
+
 
 // define um evento que é executado antes do usuario ser salvo no banco
 UsuarioSchema.pre('save', function (next) {
