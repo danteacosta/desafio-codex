@@ -6,7 +6,13 @@ const transformarUsuario = (usuarioBD) => {
     return {
         id: usuarioBD._doc._id.toString(),
         nome: usuarioBD._doc.nome,
-        email: usuarioBD._doc.email
+        email: usuarioBD._doc.email,
+        cargo: usuarioBD._doc.cargo,
+        nascimento: usuarioBD._doc.nascimento,
+        telefone: usuarioBD._doc.telefone,
+        especialidade: usuarioBD._doc.especialidade
+        
+        
     }
 }
 
