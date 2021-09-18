@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import api from "../../service";
+
 import SignInput from "../../components/SignInput";
 import SignButtom from "../../components/SignButton";
 import InvalidityMsg from "../../components/InvalidityMsg";
-import "./styles.css";
 import { validateEmail, validatePassword } from "../../util/validation";
-import api from "../../service";
+
+import "./styles.css";
 
 const Login = (props) => {
   // criando os estados
@@ -89,7 +91,7 @@ const Login = (props) => {
         />
         <InvalidityMsg msg={password.invalidity} />
         <a href="/">Esqueceu sua senha?</a>
-        <SignButtom backgroundColor="#FF7A0A" onClick={submit} text="ENTRAR" />
+        <SignButtom onClick={submit} text="ENTRAR" />
         <a href="/signup">Cadastre-se</a>
       </div>
     </div>

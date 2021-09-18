@@ -1,0 +1,24 @@
+.task-details-container {
+    background: #a1a1a1;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid #FF7A0A;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.task-details-container h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #FF7A0A;
+}
+
+.back-button-container {
+    max-width: 500px;
+    margin: 30px auto;
+}

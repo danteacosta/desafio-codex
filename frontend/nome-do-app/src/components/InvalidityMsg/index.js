@@ -4,7 +4,7 @@ import "./styles.css";
 const invalidityMsg = (props) => {
   return (
     <div className="invalidityMsg">
-      <span>{props.msg}</span>
+      <small>{props.msg}</small>
     </div>
   );
 };
