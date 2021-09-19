@@ -11,8 +11,8 @@ const Routes = () => (
     <Route path="/" exact component={Login} />
     <Route path="/signup" component={Signup} />
     <Route path="/home" component={Home} />
-    <Route path="/:taskTitle" component={TaskDetails} />
     <Route path="/profile" component={Profile} />
+    <Route path="/:taskTitle" component={TaskDetails} />
   </Switch>
 );
 

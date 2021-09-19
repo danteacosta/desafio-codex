@@ -8,6 +8,8 @@ import Tasks from '../../components/Tasks/Tasks';
 import './styles.css';
 
 const Home = (props) => {
+
+  // Exemplo de projetos fictícios cadastrados no sistema
   const [tasks, setTasks] = useState([
     {
       id: uuidv4(),
@@ -17,6 +19,11 @@ const Home = (props) => {
     {
       id: uuidv4(),
       title: "Orkut 2.0",
+      completed: true
+    },
+    {
+      id: uuidv4(),
+      title: "Pizzaria Codemix",
       completed: true
     }
     
@@ -58,13 +65,13 @@ const Home = (props) => {
     setTasks(newTask);
   }
 
-  const handleTaskDetailsClick = () => {
+  const handleProfileDetails = () => {
     props.history.push("/profile");
   } 
 
   return (
     <>
-      <button onClick={handleTaskDetailsClick}>Visualizar meu perfil</button>
+      <button onClick={handleProfileDetails}>Visualizar meu perfil</button>
       <div className="container">
           <h1>Meus projetos</h1>
           <AddTask handleTaskAddition={handleTaskAddition} />
