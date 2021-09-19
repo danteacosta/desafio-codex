@@ -56,7 +56,11 @@ class UsuarioService {
             const usuarioCadastrado = await UsuarioRepository.cadastrar({
                 nome: dadosUsuario.nome,
                 email: dadosUsuario.email,
-                senha: dadosUsuario.senha
+                senha: dadosUsuario.senha,
+                cargo: dadosUsuario.cargo,
+                nascimento: dadosUsuario.nascimento,
+                telefone: dadosUsuario.telefone,
+                especialidade: dadosUsuario.especialidade
             });
 
             retorno.usuario = usuarioCadastrado;

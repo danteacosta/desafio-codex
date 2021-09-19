@@ -9,7 +9,7 @@ const transformarTarefa = (tarefaBD) => {
         dataInicio: tarefaBD._doc.dataInicio,
         dataPrevistaConclusao: tarefaBD._doc.dataPrevistaConclusao,
         dataConclusao: tarefaBD._doc.dataConclusao,
-        idCriador: tarefaBD._doc.idCriador
+        idUsuario: tarefaBD._doc.idUsuario
     }
 }
 

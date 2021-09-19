@@ -7,7 +7,7 @@
     "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dante Costa",
   "license": "ISC",
   "dependencies": {
     "dotenv": "10.0.0",

@@ -1,6 +1,6 @@
 # Gerenciador Tarefas NodeJS
 
-API para gestão de tarefas do projeto Devaria 2021
+API para gestão de tarefas do processo seletivo da codex 2021.2
 
 ## Configuração do ambiente de desenvolvimento
 
