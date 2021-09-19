@@ -31,7 +31,7 @@ const Home = (props) => {
 
   useEffect(() => {
     const fetchTasks = async() => {
-      // Consume api que mostra os projetos
+      // Consome uma api para simular os projetos do sistema
       const {data} = await axios.get("https://jsonplaceholder.cypress.io/todos?_limit=10");
       const getTasks = [...tasks, ...data]
       setTasks(getTasks);
