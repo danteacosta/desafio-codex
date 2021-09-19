@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "version": "1.0.0",
-        "title": "Devaria API NodeJS"
+        "title": "API NodeJS gerenciador de projetos"
     },
     "basePath": "/api",
     "securityDefinitions": {
@@ -344,6 +344,22 @@
                 "senha": {
                     "type": "string",
                     "example": "senha"
+                },
+                "cargo": {
+                    "type": "string",
+                    "example": "desenvolvedor"
+                },
+                "nascimento": {
+                    "type": "date",
+                    "example":"2021-02-02"
+                },
+                "telefone": {
+                    "type": "string",
+                    "example": "90123-45678"
+                },
+                "especialidade": {
+                    "type": "string",
+                    "example": "frontend"
                 }
             }
         },
@@ -361,6 +377,22 @@
                 "senha": {
                     "type": "string",
                     "example": "senha"
+                },
+                "cargo": {
+                    "type": "string",
+                    "example": "desenvolvedor"
+                },
+                "nascimento": {
+                    "type": "date",
+                    "example":"2021-02-02"
+                },
+                "telefone": {
+                    "type": "string",
+                    "example": "90123-45678"
+                },
+                "especialidade": {
+                    "type": "string",
+                    "example": "frontend"
                 }
             }
         },
@@ -369,7 +401,7 @@
             "properties": {
                 "nome": {
                     "type": "string",
-                    "example": "Realizar atividade física",
+                    "example": "Realizar teste de unidade",
                     "required": true
                 },
                 "dataPrevistaConclusao": {
@@ -390,7 +422,7 @@
             "properties": {
                 "nome": {
                     "type": "string",
-                    "example": "Realizar atividade física"
+                    "example": "Realizar teste de unidade"
                 },
                 "dataPrevistaConclusao": {
                     "type": "string",
@@ -428,7 +460,7 @@
                     },
                     "nome": {
                         "type": "string",
-                        "example": "Realizar atividade física"
+                        "example": "Realizar teste de unidade"
                     },
                     "dataPrevistaConclusao": {
                         "type": "string",
